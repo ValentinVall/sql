@@ -25,3 +25,4 @@ JOIN manufacturers m ON g.manufacturer_code = m.code
 WHERE g.price < 20
 GROUP BY m.code
 HAVING COUNT(g.code) > 1;
+
